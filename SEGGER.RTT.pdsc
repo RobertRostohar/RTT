@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package schemaVersion="1.7.56" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Open-CMSIS-Pack/Open-CMSIS-Pack-Spec/v1.7.56/schema/PACK.xsd">
+  <vendor>SEGGER</vendor>
+  <name>RTT</name>
+  <description>SEGGER's Real Time Transfer (RTT)</description>
+  <url>https://www.segger.com/pack/</url>
+  <repository type="git">https://github.com/SEGGERMicro/RTT.git</repository>
+  <license>LICENSE.md</license>
+
+  <releases>
+    <release version="8.56.1" date="2026-04-15">
+      Initial CMSIS-Pack for SEGGER's RTT.
+    </release>
+  </releases>
+
+  <keywords>
+    <keyword>SEGGER</keyword>
+    <keyword>RTT</keyword>
+    <keyword>Real Time Transfer</keyword>
+  </keywords>
+
+  <conditions>
+    <condition id="ASM">
+      <description>Assembly compiler</description>
+      <accept  Tcompiler="ARMCC" Toptions="AC6"/>
+      <accept  Tcompiler="ARMCC" Toptions="AC6LTO"/>
+      <accept  Tcompiler="GCC"/>
+      <accept  Tcompiler="CLANG"/>
+      <accept  Tcompiler="IAR"/>
+    </condition>
+    <condition id="ARMv7-M">
+      <description>Armv7-M architecture based device</description>
+      <accept  Dcore="Cortex-M3"/>
+      <accept  Dcore="Cortex-M4"/>
+      <accept  Dcore="Cortex-M7"/>
+      <accept  Dcore="SC300"/>
+    </condition>
+    <condition id="ASM ARMv7-M">
+      <description>Assembly compiler for Armv7-M architecture</description>
+      <require condition="ASM"/>
+      <require condition="ARMv7-M"/>
+    </condition>
+  </conditions>
+
+  <components>
+    <component Cclass="SEGGER" Cgroup="RTT" Cversion="8.56.1">
+      <description>SEGGER's Real Time Transfer (RTT)</description>
+      <RTE_Components_h>
+        #define RTE_SEGGER_RTT
+      </RTE_Components_h>
+      <files>
+        <file category="doc"       name="https://kb.segger.com/RTT"/>
+        <file category="header"    name="Config/SEGGER_RTT_Conf.h" attr="config" version="8.56.1"/>
+        <file category="header"    name="RTT/SEGGER_RTT.h"/>
+        <file category="sourceC"   name="RTT/SEGGER_RTT.c"/>
+        <file category="sourceC"   name="RTT/SEGGER_RTT_printf.c"/>
+        <file category="sourceAsm" name="RTT/SEGGER_RTT_ASM_ARMv7M.S" condition="ASM ARMv7-M"/>
+      </files>
+    </component>
+  </components>
+</package>
