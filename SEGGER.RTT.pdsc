@@ -2,7 +2,7 @@
 <package schemaVersion="1.7.56" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Open-CMSIS-Pack/Open-CMSIS-Pack-Spec/v1.7.56/schema/PACK.xsd">
   <vendor>SEGGER</vendor>
   <name>RTT</name>
-  <description>SEGGER's Real Time Transfer (RTT)</description>
+  <description overview="OVERVIEW.md">SEGGER's Real Time Transfer (RTT)</description>
   <url>https://www.segger.com/pack/</url>
   <repository type="git">https://github.com/SEGGERMicro/RTT.git</repository>
   <license>LICENSE.md</license>
