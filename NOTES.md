@@ -20,4 +20,8 @@
         - Main_RTT_MenuApp.c: Sample application to demonstrate RTT menu functionality.
         - Main_RTT_PrintfTest.c: Application to test RTT printf functionality (not a meaningful user example).
         - Main_RTT_SpeedTestApp.c: Application to test RTT speed (depends on embOS and BSP).
-    - Suggestion: create a simple [CMSIS-Pack Reference Application](https://open-cmsis-pack.github.io/cmsis-toolbox/ReferenceApplications/) which demonstrates basic RTT usage.
+
+## Reference Applications
+
+- ToDo: [CMSIS-Pack Reference Application](https://open-cmsis-pack.github.io/cmsis-toolbox/ReferenceApplications/) which demonstrates basic RTT usage.
+    - Added InputEcho example: [./RefApps/InputEcho](./RefApps/InputEcho)

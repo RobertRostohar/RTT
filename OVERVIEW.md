@@ -14,9 +14,8 @@ RTT operates through a control block and ring buffers located in target memory, 
 
 This CMSIS-Pack enables easy integration of RTT into CMSIS-based projects and toolchains and provides:
 
-- Core RTT implementation (SEGGER_RTT.c, SEGGER_RTT.h) and configuration file.
-- Optional printf retargeting support. (ToDo: how to use it)
-- Reference application that exemplifies usage. (ToDo)
+- RTT sources and configuration file.
+- Reference applications that exemplify usage. (ToDo)
 
 To use RTT in a *csolution project* add `pack: SEGGER::RTT` and `component: SEGGER:RTT`. The [RTE directory](https://open-cmsis-pack.github.io/cmsis-toolbox/build-overview/#rte-directory-structure) contains the related `SEGGER_RTT_Conf.h` for additional settings.
 

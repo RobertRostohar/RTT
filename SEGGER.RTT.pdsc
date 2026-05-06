@@ -58,4 +58,13 @@
       </files>
     </component>
   </components>
+
+  <examples>
+    <example name="RTT" folder="RefApps" doc="README.md">
+      <description>RTT applications</description>
+      <project>
+        <environment name="csolution" load="RefApps.csolution.yml"/>
+      </project>
+    </example>
+  </examples>
 </package>

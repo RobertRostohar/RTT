@@ -30,6 +30,7 @@ DEFAULT_ARGS=()
 #
 PACK_DIRS="
   Config
+  RefApps
   RTT
 "
 
