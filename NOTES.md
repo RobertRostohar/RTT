@@ -6,7 +6,7 @@
 
 ## Pack description (.pdsc)
 
-- `<url>`: needs to be updated to the actual URL of the pack.
+- `<releases>`: not an actual release on github (no `<url>`).
 - pack version 8.56.1: based on latest GitHub commit V8.56a (GitHub: latest tag is V7.54, no releases)
 - single component: SEGGER:RTT
     - component version 8.56.1: based on source code comments V8.56a
