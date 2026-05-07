@@ -63,7 +63,7 @@
     <example name="RTT" folder="RefApps" doc="README.md">
       <description>RTT applications</description>
       <project>
-        <environment name="csolution" load="RefApps.csolution.yml"/>
+        <environment name="csolution" load="RTT.csolution.yml"/>
       </project>
     </example>
   </examples>
